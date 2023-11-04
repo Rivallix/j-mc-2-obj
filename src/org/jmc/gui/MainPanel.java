@@ -294,7 +294,7 @@ public class MainPanel extends JPanel {
 		JLabel lblMinY = new JLabel(Messages.getString("PreviewPanel.FLOOR"));
 		final SpinnerModel minYModel = new SpinnerNumberModel(-64, -2048, 2048, 1);
 		minYSpinner = new JSpinner(minYModel);
-		minYSpinner.setPreferredSize(new Dimension(70, 22));
+		minYSpinner.setPreferredSize(new Dimension(75, minYSpinner.getPreferredSize().height));
 
 		holderMinY.add(lblMinY);
 		holderMinY.add(minYSpinner);
@@ -307,7 +307,7 @@ public class MainPanel extends JPanel {
 		JLabel lblMaxY = new JLabel(Messages.getString("PreviewPanel.CEILING"));
 		final SpinnerModel maxYModel = new SpinnerNumberModel(320, -2048, 2048, 1);
 		maxYSpinner = new JSpinner(maxYModel);
-		maxYSpinner.setPreferredSize(new Dimension(70, 22));
+		maxYSpinner.setPreferredSize(new Dimension(75, maxYSpinner.getPreferredSize().height));
 
 		holderMaxY.add(lblMaxY);
 		holderMaxY.add(maxYSpinner);
